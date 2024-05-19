@@ -3,9 +3,9 @@
 
 from flask import Flask
 
-app = Flask(__name__)
+app = Flask(strict_slashes=False, __name__)
 """For instances"""
-app.url_map.strict_slashes = False
+# app.url_map.strict_slashes = False
 
 @app.route('/', strict_slashes=False)
 def home():
