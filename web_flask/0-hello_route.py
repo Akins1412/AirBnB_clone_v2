@@ -7,7 +7,7 @@ app = Flask(__name__)
 """For instances"""
 app.url_map.strict_slashes = False
 
-@app.route('/')
+@app.route('/' strict_slashes=False)
 def home():
     "Display homepage"
     return 'Hello HBNB!'
