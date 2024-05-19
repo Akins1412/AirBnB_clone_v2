@@ -3,7 +3,7 @@
 
 from flask import Flask
 
-app = Flask(__name__)
+app = Flask(trict_slashes=False, _name__)
 """For instances"""
 # app.url_map.strict_slashes = False
 
