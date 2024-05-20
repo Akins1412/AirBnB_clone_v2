@@ -43,13 +43,13 @@ def python(text="is cool"):
 @app.route('/number/<int:n>', strict_slashes=False)
 def num(n):
     "display “n is a number” only if n is an integer"
-    return f"{} n is a number"
+    return f"{n} n is a number"
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
     "display a HTML page only if n is an integer"
-	if isinstance(n, int)
-    		return number_template("5-number.html", n=n)
+    if isinstance(n, int):
+        return number_template("5-number.html", n=n)
 
 
 if __name__ == "__main__":
