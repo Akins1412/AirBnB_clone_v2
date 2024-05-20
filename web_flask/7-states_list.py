@@ -6,7 +6,7 @@ Your web application must be listening on 0.0.0.0
 
 from flask import Flask
 from flask import render_template
-from model import storage
+from models import storage
 
 app = Flask(__name__)
 
